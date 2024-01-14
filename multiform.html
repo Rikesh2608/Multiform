@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="multiform.css">
+<title>Multistep form</title>
+
+</head>
+<body>
+<main>
+<div class="box-container">
+
+    <!--Leftsection of the Box-->
+
+    <div class="left-section">
+        <div class="page1-num-container page-num-container">
+            <div class="step1 steps">1</div>
+            <div class="step-container">
+                <div class="page1-step">
+                    STEP 1
+                </div>
+                <div class="page-desc">
+                    YOUR INFO
+                </div>
+            </div>
+        </div>
+        <div class="page2-num-container page-num-container">
+            <div class="step2 steps">2</div>
+            <div class="step-container">
+                <div class="page2-step">
+                    STEP 2
+                </div>
+                <div class="page-desc">
+                    SELECT PLAN
+                </div>
+            </div>
+        </div>
+        <div class="page3-num-container page-num-container">
+            <div class="step3 steps">3</div>
+            <div class="step-container">
+                <div class="page3-step">
+                    STEP 3
+                </div>
+                <div class="page-desc">
+                    ADD-ONS
+                </div>
+            </div>
+        </div>
+        <div class="page4-num-container page-num-container">
+            <div class="step4 steps">4</div>
+            <div class="step-container">
+                <div class="page4-step">
+                    STEP 4
+                </div>
+                <div class="page-desc">
+                    SUMMARY
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Rightsection of the Box-->
+
+    <div class="right-section">
+
+        <!--  Page1  -->
+
+        <div class="page1-container">
+            
+        <div class="page-header-container">
+            <h1>Personal info</h1>
+            <div>Please provide your name, email and phone number.</div>
+        </div>
+        <div class="page1-form-container">
+            <div class="name-container">
+                <div>
+                    Name
+                </div>
+                <div class="required-field">
+                    Must contain 3 letters !!
+                </div>
+            </div>
+            <input type="text" id="name" placeholder="e.g. Stephen king">
+        </div>
+        <div class="page1-form-container">
+            <div class="email-container">
+                <div>
+                    Email Address
+                </div>
+                <div class="required-field email-requirement">
+                    Valid Mail required !!
+                </div>
+            </div>
+            <input type="email" id="email" placeholder="e.g. Stephenking@gmail.com">
+        </div>
+        <div class="page1-form-container">
+            <div class="phone-container">
+                <div>
+                    Phone Number
+                </div>
+                <div class="required-field">
+                    Valid Number required !!
+                </div>
+            </div>
+            <input type="tel" id="phone" placeholder="e.g. +1 234 567 890">
+        </div>
+        <div class="next-btn">
+            <button class="next page1-btn">Next Step</button>
+        </div>
+        </div>
+
+        <!--Page 2 container-->
+
+        <div class="page2-container">
+            <div class="page-header-container">
+                <h1>Select your plan</h1>
+                <div>You have the option of yearly billing</div>
+            </div>
+            <div class="page2-middle-section">
+                <div class="arcade-container plans" id="Arcade">
+                    <img src="icon-arcade.svg" alt="arcade">
+                    <div>
+                        <h4>Arcade</h4>
+                        <div class="cost-container">
+                            <div class="cost">
+                                $9/mo
+                            </div>       
+                            <div                class="two-mon-free">2 month free</div>
+                            </div>
+                    </div>
+                </div>
+                <div class="advance-container plans" id="Advance">
+                    <img src="icon-advanced.svg" alt="advanced">
+                    <div>
+                        <h4>Advance</h4>
+                        <div class="cost-container">
+                            <div class="cost">
+                                $12/mo
+                            </div>
+                            <div class="two-mon-free">2 month free</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro-container plans" id="Pro">
+                    <img src="icon-pro.svg" alt="pro">
+                    <div>
+                        <h4>Pro</h4>
+                        <div class="cost-container">
+                            <div class="cost">
+                                $15/mo
+                            </div>
+                            <div class="two-mon-free">2 month free</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="monthly-year-container">
+                <div class="monthly">Monthly</div>
+                <div class="monthly-yearly-converter">
+                    <div class="monthly-yearly-side"></div>
+                </div>
+                <div class="yearly">Yearly</div>
+            </div>
+            <div class="page2-next-btn nxt-back-container">
+                <div class="page2-goback go-back">Go Back</div>
+                <button class="next page2-btn">Next Step</button>
+            </div>
+        </div>
+
+        <!--Page 3 container-->
+
+        <div class="page3-container">
+            <div class="page-header-container">
+                <h1>Pick add-ons</h1>
+                <div>Add-ons help enhance your gaming experience</div>
+            </div>
+            <div class="page3-middle-section">
+                <div class="online-service">
+                    <div class="add-on-left">
+                        <input type="checkbox" id="online-service" value="Online Service">
+                        <div class="add-ons">
+                            <h4>Online service</h4>
+                            <div>
+                                Access to multiplayer games
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-on-cost">
+                        +$1/mo
+                    </div>
+                </div>
+                <div class="larger-storage">
+                    <div class="add-on-left">
+                        <input id="larger-storage" type="checkbox" value="Larger Storage">
+                        <div class="add-ons">
+                            <h4>Larger storage</h4>
+                            <div>
+                                Extra 1TB of cloud save
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-on-cost">
+                        +$2/mo
+                    </div>
+                </div>
+                <div class="customazible-profile">
+                    <div class="add-on-left">
+                        <input id="customazible" type="checkbox" value="Customazible Profile">
+                        <div class="add-ons">
+                            <h4>Customazible-profile</h4>
+                            <div>
+                                Custom theme on your profile
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-on-cost">
+                        +$2/mo
+                    </div>
+                </div>
+            </div>
+            <div></div>
+            <div class="page3-next-btn nxt-back-container">
+                <div class="go-back page3-goback">Go Back</div>
+                <button class="next page3-btn">Next Step</button>
+            </div>
+        </div>
+
+        <!--Page 4 container-->
+
+        <div class="page4-container">
+            <div class="page-header-container">
+                <h1>Finishing up</h1>
+                <div>Double-check everything looks OK before confirming.</div>
+            </div>
+            <div class="page4-middle-section">
+                <div class="invoice-container">
+                    <div class="plans-invoice">
+                        <div>
+                            <h4 >Arcade<span class="plan-invoice-moyr">(Monthly)</span></h4>
+                            <div class="change-plans">change</div>
+                        </div>
+                        <div>
+                            <h4 class="plan-invoice-price">$9/mo</h4>
+                        </div>
+                    </div>
+                    <div class="addon-invoice-container">
+                    </div>
+                </div>
+                <div class="total-price-container">
+                        <div>
+                            Total(per<span>Year</span>)
+                        </div>
+                        <h2>$12/mo</h2>
+                </div>
+            </div>
+            <div class="page4-next-btn nxt-back-container">
+                <div class="go-back page4-goback">Go Back</div>
+                <button class="next page4-btn">Confirm</button>
+            </div>
+        </div>
+
+        <!--Page 5 container-->
+
+        <div class="page5-container">
+            <div class="page5">
+                <div>
+                    <img src="icon-thank-you.svg">
+                </div>
+                <h1>Thank you!</h1>
+                <div>
+                    Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+
+<script type="module" src="multiform.js"></script>
+
+</body>
+</html>
